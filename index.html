@@ -1,0 +1,42 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="index.js"></script>
+</head>
+<style>
+  table, th, td {
+    border:1px solid black;
+  }
+  .delete:hover{
+    color: red;
+    cursor: pointer;
+  }
+  .update:hover{
+    color: blue;
+    cursor: pointer;
+  }
+  </style>
+<body>
+  <button type="button" onclick="getUsers()">GET Users</button>
+  <hr>
+  <div id="usersTable">
+  </div>
+  <br>
+  <hr>
+  <form id="userForm">
+    <label for="userName">Name</label>
+    <input type="text" name="userName" id="userName">
+    <label for="email">Email</label>
+    <input type="email" name="email" id="email">
+    <label for="age">Age</label>
+    <input type="number" name="age" id="age">
+  </form>
+  <button type="button" onclick="postUsers()">POST Users</button>
+  <hr>
+  <br>
+  <div id="updateUserForm"></div>
+</body>
+</html>
